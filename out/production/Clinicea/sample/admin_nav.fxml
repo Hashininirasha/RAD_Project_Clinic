@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.adminController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4687d9" height="500.0" stroke="#4687d9" strokeType="INSIDE" width="200.0" />
+      <Line endX="100.0" layoutY="159.0" startX="-100.0" stroke="WHITE" />
+      <Button fx:id="btnTodayDetails" layoutX="5.0" layoutY="173.0" mnemonicParsing="false" onAction="#onClickTodayDetails" prefHeight="67.0" prefWidth="189.0" styleClass="nav-btn" stylesheets="@../styles.css" text="Today Details">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUserDetails" layoutX="4.0" layoutY="250.0" mnemonicParsing="false" onAction="#onClickUserDetails" prefHeight="67.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@../styles.css" text="User Details" />
+      <Button fx:id="btnSetting" layoutX="4.0" layoutY="330.0" mnemonicParsing="false" onAction="#onClickSetting" prefHeight="67.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@../styles.css" text="Settings" />
+      <ImageView fitHeight="45.0" fitWidth="78.0" layoutX="-5.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/token.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="750.0" layoutY="7.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="X">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="16.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane fx:id="home" layoutX="200.0" layoutY="39.0" prefHeight="454.0" prefWidth="590.0" />
+      <ImageView fitHeight="134.0" fitWidth="126.0" layoutX="18.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/docc.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="45.0" layoutX="16.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/set.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

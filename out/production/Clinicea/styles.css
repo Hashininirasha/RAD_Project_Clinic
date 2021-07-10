@@ -1,0 +1,7 @@
+.nav-btn{
+    -fx-background-color: #fff;
+    -fx-text-fill: #0a0acc;
+    -fx-text-alignment: right !important;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
